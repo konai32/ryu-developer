@@ -95,11 +95,14 @@ local petTable = {
     ["Oasis Egg"] = { "Meerkat", "Sand Snake", "Axolotl", "Fennec Fox" },
     ["Paradise Egg"] = { "Ostrich", "Peacock", "Capybara", "Mimic Octopus" },
     ["Dinosaur Egg"] = { "Raptor", "Triceratops", "Stegosaurus", "T-Rex" },
-    ["Primal Egg"] = { "Parasaurolophus", "Iguanodon", "Pachycephalosaurus", "Spinosaurus",},
+    ["Primal Egg"] = { "Parasaurolophus", "Iguanodon", "Pachycephalosaurus", "Spinosaurus" },
     ["Zen Egg"] = { "Shiba Inu", "Nihonzaru", "Kitsune" },
-    ["Gourmet Egg"] = { "Bagel Bunny", "Pancake Mole", "Sushi Bear", "Spaghetti Sloth", "French Fry Ferret" }
+    ["Gourmet Egg"] = { "Bagel Bunny", "Pancake Mole", "Sushi Bear", "Spaghetti Sloth", "French Fry Ferret" },
+    ["Spooky Egg"] = { "Bat", "Bone Dog", "Spider", "Black Cat", "Headless Horseman", "Ghostly Headless Horseman" },
+    ["Common Summer Egg"] = { "Starfish", "Seagull", "Crab" },
+    ["Rare Summer Egg"] = { "Sea Turtle", "Flamingo", "Toucan", "Orangutan", "Seal" },
+    ["Sprout Egg"] = { "Golden Goose", "Golem", "Seedling" },
 }
-
 local espEnabled = true
 local truePetMap = {}
 
