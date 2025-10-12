@@ -275,16 +275,16 @@ end
 
 local function countdownAndRandomize(button)
     for i = 10, 1, -1 do
-        button.Text = "🎲 Randomize in: " .. i
+        button.Text = " 🎲 Randomize in: " .. i
         wait(1)
     end
     flashEffect(button)
     randomizeNearbyEggs()
-    button.Text = "🎲 Randomize Pets"
+    button.Text = " 🎲 Randomize Pets"
 end
 
 
--- 🌿 GUI Setup
+-- ❇️ GUI Setup
 local screenGui = Instance.new("ScreenGui", player:WaitForChild("PlayerGui"))
 screenGui.Name = "PetHatchGui"
 
@@ -375,7 +375,7 @@ local randomizeBtn = Instance.new("TextButton", frame)
 randomizeBtn.Size = UDim2.new(1, -20, 0, 50)
 randomizeBtn.Position = UDim2.new(0, 10, 0, 50)
 randomizeBtn.BackgroundColor3 = Color3.fromRGB(0, 200, 100)
-randomizeBtn.Text = "🐣 Hatch Random Pets"
+randomizeBtn.Text = " 🐣 Hatch Random Pets"
 randomizeBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
 randomizeBtn.Font = Enum.Font.GothamBold
 randomizeBtn.TextSize = 18
@@ -390,12 +390,12 @@ randomizeBtn.MouseButton1Click:Connect(function()
 end)
 
 
--- 👁️ ESP Toggle
+-- 🧿 ESP Toggle
 local toggleBtn = Instance.new("TextButton", frame)
 toggleBtn.Size = UDim2.new(1, -20, 0, 40)
 toggleBtn.Position = UDim2.new(0, 10, 0, 110)
 toggleBtn.BackgroundColor3 = Color3.fromRGB(230, 230, 230)
-toggleBtn.Text = "🧿 ESP: ON"
+toggleBtn.Text = " 🧿 ESP: ON"
 toggleBtn.TextSize = 18
 toggleBtn.Font = Enum.Font.GothamBold
 toggleBtn.TextColor3 = Color3.fromRGB(0, 150, 70)
@@ -418,12 +418,12 @@ for _, egg in pairs(getPlayerGardenEggs(60)) do
 end
 
 
--- 🔁 Auto Randomize Button
+--  🔁 Auto Randomize Button
 local autoBtn = Instance.new("TextButton", frame)
 autoBtn.Size = UDim2.new(1, -20, 0, 35)
 autoBtn.Position = UDim2.new(0, 10, 0, 160)
 autoBtn.BackgroundColor3 = Color3.fromRGB(0, 180, 90)
-autoBtn.Text = "🔁 Auto Randomize: OFF"
+autoBtn.Text = " 🔁 Auto Randomize: OFF"
 autoBtn.TextSize = 16
 autoBtn.Font = Enum.Font.GothamBold
 autoBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -438,7 +438,7 @@ local bestPets = {
 
 autoBtn.MouseButton1Click:Connect(function()
     autoRunning = not autoRunning
-    autoBtn.Text = autoRunning and "🔁 Auto Randomize: ON" or "🔁 Auto Randomize: OFF"
+    autoBtn.Text = autoRunning and "🔁 Auto Randomize: ON" or " 🔁 Auto Randomize: OFF"
     coroutine.wrap(function()
         while autoRunning do
             flashEffect(randomizeBtn)
